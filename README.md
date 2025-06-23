@@ -1,78 +1,70 @@
-# MVP-PROJECT-MINECHAT
+MINECHAT - Documentação do Projeto
+📌 Visão Geral
+O MINECHAT é um jogo interativo transmitido ao vivo no YouTube em formato vertical, onde jogadores controlam criaturas inspiradas em Minecraft usando comandos do chat. O público-alvo são crianças e adolescentes fãs de streaming, Pokémon e RPG.
 
-1. Visão Geral do Projeto
-MINECHAT é um projeto de jogo online interativo que ocorre ao vivo no YouTube em formato vertical. Utilizando comandos do chat, os jogadores podem participar de batalhas 1x1 controlando criaturas em tempo real. O público-alvo é formado por crianças e adolescentes que consomem conteúdo de streaming e jogos como Pokémon ou RPG. O jogo foi criado como MVP para futura expansão em um jogo estilo RPG completo com monetização e progressão.
+Este MVP servirá como base para um futuro RPG completo com monetização, progressão e multiplataforma.
 
-3. Funcionalidades do Sistema
-- Entrada via comando `!Join` sorteando jogadores automaticamente.
-- Comandos para controlar a batalha (`!Ready`, `!atack`, `!item`, `!escape`, `!bet`).
-- Cada criatura possui 4 ataques únicos com possibilidade de crítico e efeito 'Appart' (hit kill 0.5%).
-- Itens ilimitados: buffs, cura e suporte.
-- Sistema de defesa das criaturas reduz dano de 25% a 75%.
-- Bots entram automaticamente após 4:40 min sem interação no chat.
-- Ranking e histórico salvos em arquivos JSON periodicamente.
-- Tela responsiva com HUD dividida e nomes acima das criaturas.
-- Site com login, loja, inventário, ranking e histórico de partidas.
+🎮 Funcionalidades Principais
+⚡ Sistema de Batalha
+Comandos do Chat:
 
-3. Interface Visual na Live
-A interface principal exibida na live é dividida verticalmente (1080x1920):
-- Jogador 1 à esquerda, Jogador 2 à direita.
-- Nome dos jogadores exibido acima das criaturas.
-- Barra de vida animada.
-- Comandos visíveis no topo da tela.
-- Ranking visível em uma das extremidades inferiores.
-  
-4. Lógica e Regras de Batalha
-- Cada batalha dura no máximo 2 minutos ou até um dos jogadores perder todo o HP.
-- Se o jogador não digitar `!Ready` em 20 segundos, é substituído.
-- Comando `!bet` tem 50% de chance de matar ou morrer instantaneamente.
-- Cada criatura possui 4 ataques únicos com variações de dano, crítico e habilidades.
-- O ataque 1 possui chance de crítico e chance de hit kill chamada 'Appart'.
-- Sistema de defesa aplicado à criatura reduz dano com base no tipo.
-  
-5. Criaturas Iniciais
-    • Zumbi
-    • Esqueleto
-    • Pé grande
-    • Olho mágico flutuante
-    • Homem quadrado estilo Minecraft
-  
-6. Comandos Disponíveis
-    • `!Join` – entra na fila e sorteio
-    • `!Ready` – confirma prontidão para batalha
-    • `!atack` – ataque padrão
-    • `!atack (1-4)` – ataque específico
-    • `!ataque aleatorio` – sorteia ataque da criatura
-    • `!item (1-4)` – usa item
-    • `!escape` – desiste da batalha
-    • `!bet` – aposta tudo (50% de chance de matar ou morrer)
+!Join – Entra na fila para batalha.
 
-7. Monetização
-- Jogadores compram moedas no site oficial via PIX ou gateways de pagamento.
-- Com as moedas, compram skins (cosméticas e com habilidades), itens e ataques especiais.
-- Skins são obtidas via lootboxes e influenciam no visual e nas habilidades da criatura.
-- Planeja-se LivePix como forma de apoiar diretamente durante as transmissões.
-  
-8. Funcionalidades do Site
-- Sistema de login e cadastro.
-- Escolha de criatura e ataques.
-- Loja virtual para comprar moedas, itens e skins.
-- Inventário do jogador com itens e personalizações.
-- Visualização de ranking e histórico de partidas.
-  
-9. Stack Tecnológica
-    • Python para backend e lógica do jogo
-    • Pygame para renderização vertical (1080x1920)
-    • API YouTube Data v3 para leitura do chat
-    • OBS Studio para transmissão da live
-    • Banco de dados: SQLite, PostgreSQL ou Firebase
-    • Frontend web: HTML/CSS/JS, Flask, React ou Next.js
-  
-10. Armazenamento e Backup
-O histórico de batalhas, dados de jogadores, skins e ranking serão armazenados em arquivos JSON durante o MVP. Posteriormente, será migrado para um banco de dados mais robusto com backups automáticos.
+!Ready – Confirma prontidão.
 
-12. Equipe e Estrutura Organizacional
-Lucas Heitor é o fundador, líder técnico, designer, gerente e coordenador de equipe. Atualmente, o projeto conta com 3 membros, com previsão de expansão conforme o MVP avance e traga resultados.
+!atack (1-4) – Executa um ataque específico.
 
-14. Visão Futura: Jogo RPG Completo
-O MINECHAT servirá como base para um jogo completo RPG com mundo aberto, criaturas evolutivas, inventário persistente, sistema de progressão, loja integrada e campanhas. O jogo será multiplataforma, podendo rodar na web, desktop ou até dispositivos móveis.
+!item (1-4) – Usa um item (cura, buff, etc.).
+
+!bet – Aposta tudo (50% de chance de vitória ou derrota instantânea).
+
+Criaturas com habilidades únicas (4 ataques cada, incluindo críticos e efeito Appart – hit kill 0,5%).
+
+Sistema de defesa (reduz dano em 25% a 75%).
+
+Bots automáticos entram após 4:40 min sem interação.
+
+📊 Progressão e Ranking
+Ranking e histórico salvos em JSON.
+
+Tela de transmissão com HUD (barra de vida, nomes, comandos visíveis).
+
+💰 Monetização (Futuro)
+Loja virtual com skins, itens e lootboxes.
+
+Moedas compráveis via PIX/gateways.
+
+LivePix para doações diretas.
+
+🎨 Interface na Live
+Formato vertical (1080x1920).
+
+Jogador 1 (esquerda) vs. Jogador 2 (direita).
+
+Barras de vida animadas.
+
+Ranking exibido na parte inferior.
+
+🛠️ Stack Tecnológica
+Área	Tecnologias
+Backend	Python (lógica do jogo)
+Renderização	Pygame (tela vertical)
+Chat	YouTube Data API v3
+Transmissão	OBS Studio
+Banco de Dados	SQLite (MVP) → Firebase/PostgreSQL (futuro)
+Frontend Web	HTML/CSS/JS, Flask/React/Next.js
+📂 Armazenamento
+MVP: Dados salvos em JSON (histórico, ranking).
+
+Futuro: Migração para banco de dados (Firebase/PostgreSQL) com backups.
+
+🚀 Visão Futura
+Jogo RPG completo com:
+
+Mundo aberto.
+
+Criaturas evolutivas.
+
+Progressão persistente.
+
+Multiplataforma (web, desktop, mobile).
