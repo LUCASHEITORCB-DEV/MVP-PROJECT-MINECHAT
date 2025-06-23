@@ -1,7 +1,5 @@
 # MINECHAT - Jogo Interativo via Chat do YouTube
 
-![Banner MINECHAT](caminho/para/banner.png) <!-- Adicione um banner se disponível -->
-
 **MINECHAT** é um jogo interativo transmitido ao vivo no YouTube em formato vertical, onde jogadores controlam criaturas estilo Minecraft através de comandos no chat. Desenvolvido como um MVP, o projeto visa evoluir para um RPG completo com monetização e progressão.
 
 ## 🚀 Visão Geral
