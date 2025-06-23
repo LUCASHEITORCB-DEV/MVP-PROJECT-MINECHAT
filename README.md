@@ -21,7 +21,7 @@ A interface principal exibida na live é dividida verticalmente (1080x1920):
 - Barra de vida animada.
 - Comandos visíveis no topo da tela.
 - Ranking visível em uma das extremidades inferiores.
-- 
+  
 4. Lógica e Regras de Batalha
 - Cada batalha dura no máximo 2 minutos ou até um dos jogadores perder todo o HP.
 - Se o jogador não digitar `!Ready` em 20 segundos, é substituído.
@@ -29,7 +29,7 @@ A interface principal exibida na live é dividida verticalmente (1080x1920):
 - Cada criatura possui 4 ataques únicos com variações de dano, crítico e habilidades.
 - O ataque 1 possui chance de crítico e chance de hit kill chamada 'Appart'.
 - Sistema de defesa aplicado à criatura reduz dano com base no tipo.
-- 
+  
 5. Criaturas Iniciais
     • Zumbi
     • Esqueleto
@@ -52,14 +52,14 @@ A interface principal exibida na live é dividida verticalmente (1080x1920):
 - Com as moedas, compram skins (cosméticas e com habilidades), itens e ataques especiais.
 - Skins são obtidas via lootboxes e influenciam no visual e nas habilidades da criatura.
 - Planeja-se LivePix como forma de apoiar diretamente durante as transmissões.
-- 
+  
 8. Funcionalidades do Site
 - Sistema de login e cadastro.
 - Escolha de criatura e ataques.
 - Loja virtual para comprar moedas, itens e skins.
 - Inventário do jogador com itens e personalizações.
 - Visualização de ranking e histórico de partidas.
-- 
+  
 9. Stack Tecnológica
     • Python para backend e lógica do jogo
     • Pygame para renderização vertical (1080x1920)
